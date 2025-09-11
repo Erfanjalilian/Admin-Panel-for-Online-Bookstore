@@ -1,3 +1,4 @@
+import Link from "next/link";
 function Footer() {
   return (
     <footer className="bg-gradient-to-r from-indigo-100 to-blue-50 shadow-inner rounded-t-3xl mt-16">
@@ -7,10 +8,10 @@ function Footer() {
           <span className="text-xl font-extrabold text-indigo-700">BookStore Admin Panel</span>
         </div>
         <div className="flex gap-6 text-indigo-700 font-medium">
-          <a href="/" className="hover:text-indigo-900 transition-colors duration-200">خانه</a>
-          <a href="/UserManagement" className="hover:text-indigo-900 transition-colors duration-200">مدیریت کاربران</a>
-          <a href="/Orders" className="hover:text-indigo-900 transition-colors duration-200">سفارشات</a>
-          <a href="#" className="hover:text-indigo-900 transition-colors duration-200">تماس با ما</a>
+          <Link href="/" className="hover:text-indigo-900 transition-colors duration-200">خانه</Link>
+          <Link href="/UserManagement" className="hover:text-indigo-900 transition-colors duration-200">مدیریت کاربران</Link>
+          <Link href="/Orders" className="hover:text-indigo-900 transition-colors duration-200">سفارشات</Link>
+          <Link href="#" className="hover:text-indigo-900 transition-colors duration-200">تماس با ما</Link>
         </div>
         <div className="text-gray-500 text-sm text-center md:text-right">
           © {new Date().getFullYear()} BookStore Admin. تمامی حقوق محفوظ است.
